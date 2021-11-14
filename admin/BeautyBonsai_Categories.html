@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BeautyBonsai | Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="public/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="public/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="public/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- jQuery custom content scroller -->
+    <link href="public/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <script src="public/vendors/validator/validator.js"></script>
+    <!-- Custom Theme Style -->
+    <link href="public/build/css/custom.css" rel="stylesheet">
+    <script src="public/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="public/style/js/ckeditor/ckeditor.js"></script>
+
+    <script src="public/style/js/myscript.js"></script>
+    <!-- <script src="public/style/js/validate_formsrm.js"></script> -->
+    <link href="public/style/css/style.css" rel="stylesheet">
+    <link href="public/select2/dist/css/select2.css" rel="stylesheet"> </head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <span class="logo-lg">
+                            <b>Admin</b>LTE
+                        </span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="../images/admin/default-avatar.png" alt="Profile Avatar" class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome, <br/>Super admin </span>
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a href="BeautyBonsai_Order.html">
+                                        <i class="fa fa-shopping-bag"></i>
+                                        Order
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="BeautyBonsai_Categories.html">
+                                        <i class="fa fa-align-left"></i>
+                                        Categories</a>
+                                    </li>
+                                <li>
+                                    <a href="BeautyBonsai_Product.html">
+                                        <i class="fa fa-leaf"></i>
+                                        Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-users"></i>
+                                        Account Information 
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="BeautyBonsai_AdminAccount.html">Administration</a>
+                                        </li>
+                                        <li>
+                                            <a href="BeautyBonsai_UserAccount.html">Users</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="BeautyBonsai_Coupon.html">
+                                        <i class="fa fa-minus-square"></i>
+                                        Coupon 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="../images/admin/default-avatar.png" alt="">Super admin <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="BeautyBonsai_Login.html?action=logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>Categories</h3>
+                        </div>
+                        <div class="title_right">
+                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search"></div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 form-group pull-right ">
+                            <button type="button" class="btn btn-round btn-danger" onclick="history.go(-1); return false;" style="float: right;">Back</button>
+                            <a href="BeautyBonsai_Add_Categories.html" class="btn btn-round btn-primary" style="float: right;">Add New </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>List of categories<small>List</small></h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <form method="get" action="" class="list_filter form">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>ID</th>
+                                                            <th>Name</th>
+                                                            <th>Edit</th>
+                                                            <th>Delete</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <td class="center">1</td>
+                                                        <td>Fheng Shui Plant</td>
+
+                                                        <td class="center">
+                                                            <a href="BeautyBonsai_Edit_Categories.html">
+                                                                <i class="fa fa-edit" style="font-size: 20px; color: #4caf50;">
+                                                </i>
+                                                            </a>
+                                                        </td>
+                                                        <td class="center">
+                                                            <a href="CateController.php?action=delete&id=37" class="verify_action">
+                                                                <i class="fa fa-trash-o" style="font-size: 20px; color: red;">
+                                                </i>
+                                                                </p>
+                                                        </td>
+                                                        </tr>
+
+                                                        <td class="center">2</td>
+                                                        <td>Succulent Tree</td>
+
+                                                        <td class="center">
+                                                            <a href="BeautyBonsai_Edit_Categories.html">
+                                                                <i class="fa fa-edit" style="font-size: 20px; color: #4caf50;">
+                                                </i>
+                                                            </a>
+                                                        </td>
+                                                        <td class="center">
+                                                            <a href="CateController.php?action=delete&id=38" class="verify_action">
+                                                                <i class="fa fa-trash-o" style="font-size: 20px; color: red;">
+                                                </i>
+                                                                </p>
+                                                        </td>
+                                                        </tr>
+
+                                                        <td class="center">3</td>
+                                                        <td>Office Tree</td>
+
+                                                        <td class="center">
+                                                            <a href="BeautyBonsai_Edit_Categories.html">
+                                                                <i class="fa fa-edit" style="font-size: 20px; color: #4caf50;">
+                                                </i>
+                                                            </a>
+                                                        </td>
+                                                        <td class="center">
+                                                            <a href="CateController.php?action=delete&id=40" class="verify_action">
+                                                                <i class="fa fa-trash-o" style="font-size: 20px; color: red;">
+                                                </i>
+                                                                </p>
+                                                        </td>
+                                                        </tr>
+
+                                                        <td class="center">4</td>
+                                                        <td>Cactus Tree</td>
+
+                                                        <td class="center">
+                                                            <a href="BeautyBonsai_Edit_Categories.html">
+                                                                <i class="fa fa-edit" style="font-size: 20px; color: #4caf50;">
+                                                </i>
+                                                            </a>
+                                                        </td>
+                                                        <td class="center">
+                                                            <a href="CateController.php?action=delete&id=41" class="verify_action">
+                                                                <i class="fa fa-trash-o" style="font-size: 20px; color: red;">
+                                                </i>
+                                                                </p>
+                                                        </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <ul class='pagination'></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="public/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="public/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="public/vendors/nprogress/nprogress.js"></script>
+    <script src="public/select2/dist/js/select2.js"></script>
+    <!-- jQuery custom content scroller -->
+    <script src="public/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="public/ckeditor/ckeditor.js"></script>
+    <script src="public/ckfinder/ckfinder.js"></script>
+    <script type="text/javascript">
+        CKEDITOR.replace('content');
+    </script>
+
+    <script>
+        $(function() {
+            $('.permission').select2()
+        })
+    </script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="public/build/js/custom.min.js"></script>
+</body>
+
+</html>

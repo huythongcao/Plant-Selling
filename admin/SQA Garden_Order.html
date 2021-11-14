@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SQA Garden | Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="public/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="public/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- NProgress -->
+    <link href="public/vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- jQuery custom content scroller -->
+    <link href="public/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <script src="public/vendors/validator/validator.js"></script>
+
+    <!-- Custom Theme Style -->
+    <link href="public/build/css/custom.css" rel="stylesheet">
+    <script src="public/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="public/style/js/ckeditor/ckeditor.js"></script>
+    <script src="public/style/js/myscript.js"></script>
+
+    <!-- <script src="public/style/js/validate_formsrm.js"></script> -->
+    <link href="public/style/css/style.css" rel="stylesheet">
+    <link href="public/select2/dist/css/select2.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <span class="logo-lg">
+                            <b>Admin</b>LTE
+                        </span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- menu profile quick info -->
+                     <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="../images/admin/default-avatar.png" alt="Profile Avatar" class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome, <br/>Super admin </span>
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a href="SQA Garden_Order.html">
+                                        <i class="fa fa-shopping-bag"></i>
+                                        Order
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="SQA Garden_Categories.html">
+                                        <i class="fa fa-align-left"></i>
+                                        Categories</a>
+                                    </li>
+                                <li>
+                                    <a href="SQA Garden_Product.html">
+                                        <i class="fa fa-leaf"></i>
+                                        Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-users"></i>
+                                        Account Information 
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="SQA Garden_UserAccount.html">Users</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="SQA Garden_Coupon.html">
+                                        <i class="fa fa-minus-square"></i>
+                                        Coupon 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="../images/admin/default-avatar.png" alt="">Super admin <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="SQA Garden_Login.html?action=logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+        <div class="right_col" role="main">
+            <div class="">
+                <div class="page-title" id ="load">
+                    <div class="title_left">
+                        <h3>Order List Management</h3>
+                    </div>
+                    <div class="title_right">
+                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                            <!-- <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">Go!</button>
+                                </span>
+                                </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group pull-right ">
+                        <button type="button" class="btn btn-round btn-danger" onclick="history.go(-1); return false;" style="float: right;" >Back</button>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>List of orders <small>List</small></h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <form method="get" action="" class="list_filter form">
+                                            <table class="table table-bordered">
+                                                <!-- hiển thị thông báo lỗi -->
+                                                                                        <!-- end -->
+                                                <thead>
+                                                <tr>                                                
+                                                    <th>Id</th>
+                                                    <th>User Name</th>
+                                                    <th>Full Name</th>
+                                                    <th>Coupon</th>
+                                                    <th>Reduction</th>
+                                                    <th>Total Price</th>
+                                                    <th>Final Price</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>                                                                          
+                                                    <tr class="row_35">
+                                                        <td class="center">1</td>
+                                                        <td>50</td>
+                                                        <td>thong</td>
+                                                        <td>Hải sản nhập khẩu </td>
+                                                        <td>6 </td>
+                                                        <td>4,000đ </td>
+                                                        <td>2019-11-22 11:05:53 </td>
+                                                        <td class="center actions">
+                                                            <div class="product-checking">
+                                                                <a href="SQA Garden_Detailed_Order.html">
+                                                                    <button id="view-order-btn" type="button"> View Order </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button id="accept-btn" type="button"> Accept </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button id="reject-btn" type="button"> Reject </button>
+                                                                </a>
+                                                            </div>
+                                                            <div class="delete-btn">
+                                                                <a href ="OrderController.php?action=delete&id=37" class="verify_action" >
+                                                                    <i class="fa fa-trash-o" id = "icon_red" ></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="row_37">
+                                                        <td class="center">2</td>
+                                                        <td>53</td>
+                                                        <td>thong</td>
+                                                        <td>Daffodill </td>
+                                                        <td>1 </td>
+                                                        <td>750,500đ </td>                              
+                                                        <td>2019-11-22 22:58:06 </td>
+                                                        <td class="center actions">
+                                                            <div class="product-checking">
+                                                                <a href="SQA Garden_Detailed_Order.html">
+                                                                    <button id="view-order-btn" type="button"> View Order </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button id="accept-btn" type="button"> Accept </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button id="reject-btn" type="button"> Reject </button>
+                                                                </a>
+                                                            </div>
+                                                            <div class="delete-btn">
+                                                                <a href ="OrderController.php?action=delete&id=37" class="verify_action" >
+                                                                    <i class="fa fa-trash-o" id = "icon_red" ></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="row_38">
+                                                        <td class="center">3</td>
+                                                        <td>54</td>
+                                                        <td>thong</td>
+                                                        <td>WaterLilly </td>
+                                                        <td>3 </td>
+                                                        <td>405,000đ </td>                                  
+                                                        <td>2019-11-23 10:09:30 </td>
+                                                        <td class="center actions">
+                                                            <div class="product-checking">
+                                                                <a href="SQA Garden_Detailed_Order.html">
+                                                                    <button id="view-order-btn" type="button"> View Order </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button id="accept-btn" type="button"> Accept </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button id="reject-btn" type="button"> Reject </button>
+                                                                </a>
+                                                            </div>
+                                                            <div class="delete-btn">
+                                                                <a href ="OrderController.php?action=delete&id=37" class="verify_action" >
+                                                                    <i class="fa fa-trash-o" id = "icon_red" ></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="row_39">
+                                                        <td class="center">4</td>
+                                                        <td>59</td>
+                                                        <td>thong</td>
+                                                        <td>BlueBell </td>
+                                                        <td>5 </td>
+                                                        <td>554,400đ </td>   
+                                                        <td>2019-11-24 21:11:23 </td>
+                                                        <td class="center actions">
+                                                            <div class="product-checking">
+                                                                <a href="SQA Garden_Detailed_Order.html">
+                                                                    <button id="view-order-btn" type="button"> View Order </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button id="accept-btn" type="button"> Accept </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button id="reject-btn" type="button"> Reject </button>
+                                                                </a>
+                                                            </div>
+                                                            <div class="delete-btn">
+                                                                <a href ="OrderController.php?action=delete&id=37" class="verify_action" >
+                                                                    <i class="fa fa-trash-o" id = "icon_red" ></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                                                        
+                                                </tbody>
+                                            </table>
+                                            <div class="list_actions itemActions">
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="public/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="public/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="public/vendors/nprogress/nprogress.js"></script>
+    <script src="public/select2/dist/js/select2.js"></script>
+    <!-- jQuery custom content scroller -->
+    <script src="public/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="public/ckeditor/ckeditor.js"></script>
+    <script src="public/ckfinder/ckfinder.js"></script>
+    <script type="text/javascript">
+        CKEDITOR.replace('content');
+    </script>
+
+    <script>
+        $(function() {
+            $('.permission').select2()
+        })
+    </script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="public/build/js/custom.min.js"></script>
+</body>
+
+</html>

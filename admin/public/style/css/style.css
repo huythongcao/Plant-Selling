@@ -1,0 +1,30 @@
+th , .center{
+	text-align: center;
+}
+.req{
+	color: red;
+}
+
+.text-danger p {
+    margin-bottom: -5px;
+    color: red;
+}
+
+#icons {
+	font-size: 20px; 
+	color: #4caf50;
+}
+
+#icon_red{
+	font-size: 20px; 
+	color: red;
+}
+
+#icon_xanh {
+	font-size: 20px; 
+	color: #4caf50;
+}
+.select2  {
+	width: 100% !important;
+}
+

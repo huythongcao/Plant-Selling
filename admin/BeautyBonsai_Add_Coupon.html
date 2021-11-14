@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BeautyBonsai | Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="public/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="public/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="public/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- jQuery custom content scroller -->
+    <link href="public/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <script src="public/vendors/validator/validator.js"></script>
+    <!-- Custom Theme Style -->
+    <link href="public/build/css/custom.css" rel="stylesheet">
+    <script src="public/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="public/style/js/ckeditor/ckeditor.js"></script>
+
+    <script src="public/style/js/myscript.js"></script>
+    <!-- <script src="public/style/js/validate_formsrm.js"></script> -->
+    <link href="public/style/css/style.css" rel="stylesheet">
+    <link href="public/select2/dist/css/select2.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <span class="logo-lg">
+                            <b>Admin</b>LTE
+                        </span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="../images/admin/default-avatar.png" alt="Profile Avatar" class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome, <br/>Super admin </span>
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a href="BeautyBonsai_Order.html">
+                                        <i class="fa fa-shopping-bag"></i>
+                                        Order
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="BeautyBonsai_Categories.html">
+                                        <i class="fa fa-align-left"></i>
+                                        Categories</a>
+                                    </li>
+                                <li>
+                                    <a href="BeautyBonsai_Product.html">
+                                        <i class="fa fa-leaf"></i>
+                                        Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-users"></i>
+                                        Account Information 
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="BeautyBonsai_AdminAccount.html">Administration</a>
+                                        </li>
+                                        <li>
+                                            <a href="BeautyBonsai_UserAccount.html">Users</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="BeautyBonsai_Coupon.html">
+                                        <i class="fa fa-minus-square"></i>
+                                        Coupon 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="../images/admin/default-avatar.png" alt="">Super admin <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="BeautyBonsai_Login.html?action=logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>Add Coupon</h3>
+                        </div>
+                        <div class="title_right">
+                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 form-group pull-right ">
+                            <button type="button" class="btn btn-round btn-danger" onclick="history.go(-1); return false;" style="float: right;">Back</button>
+                            <a href="BeautyBonsai_Coupon.html" class="btn btn-round btn-success" style="float: right;">List Coupon</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>Add Coupon<small>Add</small></h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <div class="col-xs-12">
+                                        <form name="news" class="news" id="news" method="post" action="NewsController.php?action=add" enctype="multipart/form-data">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="param_name " class="formLeft magin-left-30">Title :<span class="req">(*)</span></label>
+                                                        </td>
+                                                        <td>
+                                                            <input id="title" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="title" placeholder="Title" type="text" required="required">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="param_name" class="formLeft magin-left-30">Intro :<span class="req">(*)</span></label>
+                                                        </td>
+                                                        <td>
+                                                            <input id="icon" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="intro" placeholder="Intro" type="text" required="required">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="param_name" class="formLeft magin-left-30">Contents :<span class="req">(*)</span></label>
+                                                        </td>
+                                                        <td>
+                                                            <textarea class="editor form-control col-md-7 col-xs-12" id="param_content" name="content" rows="15" cols="30"></textarea>
+                                                            <div class="clear error" name="content_error"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="param_name" class="formLeft magin-left-30">Images  :</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="file" class="image" id="image" name="image">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="param_name" class="formLeft magin-left-30">Status
+                                                :<span class="req">(*)</span></label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="status" id="optionsRadios2" value="1" checked="checked"> Show
+                                                            <input type="radio" name="status" id="optionsRadios1" value="0"> Hidden
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <td>
+                                                            <button type="submit" class="btn btn-info ">Add New</button>
+                                                            <button type="reset" class="btn btn-default">Cancel</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                CKEDITOR.replace('param_content');
+            </script>
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <script src="public/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="public/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="public/vendors/nprogress/nprogress.js"></script>
+    <script src="public/select2/dist/js/select2.js"></script>
+    <!-- jQuery custom content scroller -->
+    <script src="public/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="public/ckeditor/ckeditor.js"></script>
+    <script src="public/ckfinder/ckfinder.js"></script>
+    <script type="text/javascript">
+        CKEDITOR.replace('content');
+    </script>
+
+    <script>
+        $(function() {
+            $('.permission').select2()
+        })
+    </script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="public/build/js/custom.min.js"></script>
+</body>
+
+</html>

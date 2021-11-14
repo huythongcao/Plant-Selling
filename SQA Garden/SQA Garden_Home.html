@@ -1,0 +1,768 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" xml:lang="vi" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SQA Garden</title>
+    <link href="../images/icon/favicon-cay-canh.png" rel="shortcut icon">
+    <!-- inks CSS -->
+    <link rel='stylesheet' id='caia-css' href='../css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='shop-cart-css' href='../css/gsc-style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='../css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='responsive-lightbox-fancybox-css' href='../css/jquery.fancybox-1.3.4.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='../css/font-awesome.css' type='text/css' media='screen' />
+    <link rel='stylesheet' id='responsiveslides-css' href='../css/responsiveslides.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-postratings-css' href='../css/postratings-css.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='decent-comments-widget-css' href='../css/decent-comments-widget.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='decent-comments-widget-css' href='../css/fix_menu.css' type='text/css' media='all' />
+    <script type='text/javascript' src='../js/jquery.js'></script>
+    <script type='text/javascript' src='../js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='../js/jquery.fancybox-1.3.4.js'></script>
+
+    <script type='text/javascript' src='../js/responsiveslides.min.js'></script>
+    <script type='text/javascript' src='../js/homeslide.js'></script>
+    <script type='text/javascript' src='../js/jCarouselLite2.js'></script>
+    <script type='text/javascript' src='../js/connected.js'></script>
+    <script type='text/javascript' src='../js/jcarousel.js'></script>
+    <script type='text/javascript' src='../js/slick.js'></script>
+
+    <style>
+        .at4-share-title {
+            font-style: italic;
+            font-size: 10px;
+            color: #bbb;
+        }
+        
+        .atss {
+            top: 60%!important;
+        }
+        
+        @media screen and (max-width:970px) {
+            .atss {
+                top: auto !important;
+                width: 100% !important;
+                bottom: 0 !important;
+            }
+        }
+    </style>
+    <style>
+        .scroll-back-to-top-wrapper {
+            position: fixed;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            text-align: center;
+            z-index: 99999999;
+            background-color: #5ba503;
+            color: #ffffff;
+            width: 50px;
+            height: 48px;
+            line-height: 48px;
+            right: 15px;
+            bottom: 300px;
+            padding-top: 2px;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .scroll-back-to-top-wrapper:hover {
+            background-color: #d86f45;
+            color: #ffffff;
+        }
+        
+        .scroll-back-to-top-wrapper.show {
+            visibility: visible;
+            cursor: pointer;
+            opacity: 1.0;
+        }
+        
+        .scroll-back-to-top-wrapper i.fa {
+            line-height: inherit;
+        }
+        
+        .scroll-back-to-top-wrapper .fa-lg {
+            vertical-align: 0;
+        }
+    </style>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            $(function() {
+
+                $(".rslides").responsiveSlides({
+
+                    auto: true, // Boolean: Animate automatically, true or false
+
+                    speed: 500, // Integer: Speed of the transition, in milliseconds
+
+                    timeout: 4000, // Integer: Time between slide transitions, in milliseconds
+
+                    pager: false, // Boolean: Show pager, true or false
+
+                    nav: false, // Boolean: Show navigation, true or false
+
+                    random: false, // Boolean: Randomize the order of the slides, true or false
+
+                    pause: false, // Boolean: Pause on hover, true or false
+
+                    pauseControls: false, // Boolean: Pause when hovering controls, true or false
+
+                    prevText: "Prev", // String: Text for the "previous" button
+
+                    nextText: "Next", // String: Text for the "next" button
+
+                    maxwidth: "1000", // Integer: Max-width of the slideshow, in pixels
+
+                    navContainer: "", // Selector: Where controls should be appended to, default is after the 'ul'
+
+                    manualControls: "", // Selector: Declare custom pager navigation
+
+                    namespace: "rslides", // String: Change the default namespace used
+
+                    before: function() {}, // Function: Before callback
+
+                    after: function() {} // Function: After callback
+
+                });
+
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32913978-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $("#button-product").mouseover(function() {
+                $("#menu-js .widget_nav_menu").toggle('slow');
+            });
+        });
+    </script>
+    <!-- Dynamic Widgets by QURL - http://www.qurl.nl //-->
+</head>
+
+<body class="home blog header-image content-sidebar">
+    <div id="wrap">
+
+        <!-- div  content-before-header -->
+        <div id="content-before-header">
+            <div class="wrap">
+                <div id="nav_menu-8" class="widget widget_nav_menu">
+                    <div class="widget-wrap">
+                        <div class="menu-main-menu-container">
+                            <ul id="menu-main-menu" class="menu">
+                                <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="SQA Garden_Login.html">Login</a></li>
+                                <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="SQA Garden_Signup.html">Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End content-before-header -->
+
+        <!--  div header -->
+        <div id="header">
+            <div class="wrap">
+                <div id="title-area">
+                    <a class="logo" href="SQA Garden_Home.html">
+                        <img src="../images/logo/official logo.jpg" alt="Logo">
+                    </a>
+                </h1>
+       
+                </div>
+                <div class="widget-area header-widget-area">
+                    <div id="code_widget-2" class="code-widget_search_form widget caia_code_widget">
+                        <div class="widget-wrap">
+                            <form role="search" method="get" id="searchform" action="SQA Garden_Search.html">
+                                <div class="search-list-category">
+                                    <input type="text" value="" name="search" id="s" placeholder="Search" />
+                                    <input type="submit" id="searchsubmit" value="Search" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="shop-cart-4" class="widget gsc-shop-cart">
+                        <div class="widget-wrap">
+                            <div class="cart-wrap">
+
+                                <a href="SQA Garden_Cart.html" title="View Cart">
+                                    <div style="width:41px;height:41px;display:inline-block;float:right"></div>
+                                    <p id="total-incart-price">
+                                    </p>
+                                    <span id="num-incart-products">
+                            (
+                            <span class="num-products">0</span>
+                                    <span class="product-called"> sp</span> )
+                                    </span>
+                                    <span class='checkout'>Cart</span>
+                                </a>
+                            </div>
+                            <!-- end .wrap -->
+                        </div>
+                    </div>
+                    <div id="text-12" class="widget widget_text">
+                        <div class="widget-wrap">
+                            <div class="textwidget">
+                                <p id="button-product">CATEGORIES</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="top_menu">
+                    <ul class="menus">
+                        <a href="SQA Garden_Home.html">
+                            <li class="level-1">Home</li>
+                        </a>
+                        <a href="SQA Garden_Category.html?action=product">
+                            <li>Products</li>
+                        </a>
+                        <a href="SQA Garden_News.html">
+                            <li>News</li>
+                        </a>
+                        <a href="SQA Garden_Aboutus.html">
+                            <li>About us</li>
+                        </a>
+                        <a href="SQA Garden_Contact.html">
+                            <li>Contact</li>
+                        </a>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- End div header -->
+
+        <!-- div content-slider  -->
+
+
+        <div id="content-slider">
+            <div class="wrap">
+                <div id="nav_menu-9" class="widget widget_nav_menu">
+                    <div class="widget-wrap">
+                        <div class="menu-san-pham-duoc-quan-tam-container">
+                            <ul id="menu-san-pham-duoc-quan-tam" class="menu">
+                                <li id="menu-item-180027" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-180027">
+                                    <a href="SQA Garden_Category.html" style='background-image:none;'>
+                                    Fheng Shui Plant                                        
+                                    </a>
+
+
+
+                                </li>
+                                <li id="menu-item-180027" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-180027">
+                                    <a href="SQA Garden_Category.html" style='background-image:none;'>
+                                    Cactus Tree                                        
+                                    </a>
+
+
+
+                                </li>
+                                <li id="menu-item-180027" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-180027">
+                                    <a href="SQA Garden_Category.html" style='background-image:none;'>
+                                    Succulent Tree                                        
+                                    </a>
+
+
+
+                                </li>
+                                <li id="menu-item-180027" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-180027">
+                                    <a href="SQA Garden_Category.html" style='background-image:none;'>
+                                    Office Tree                                        
+                                    </a>
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simpleresponsiveslider_widget-2" class="widget widget_simpleresponsiveslider_widget">
+
+                    <div class="widget-wrap">
+
+                        <div class="rslides_container">
+                            <ul class="rslides rslides1" style="max-width: 1000px;">
+                                <li id="rslides1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;"><img src="../images/banner/foody-1.jpg" alt="slider"></li>
+                                <li id="rslides1_s1" style="float: left; position: relative; opacity: 1; z-index: 2; display: list-item; transition: opacity 500ms ease-in-out;" class="rslides1_on"><img src="../images/banner/foody-2.jpg" alt="slider"></li>
+
+
+                                <li id="rslides1_s1" style="float: left; position: relative; opacity: 1; z-index: 2; display: list-item; transition: opacity 500ms ease-in-out;" class="rslides1_on"><img src="../images/banner/foody-3.jpg" alt="slider"></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+                <div id="text-14" class="widget widget_text">
+                    <div class="widget-wrap">
+                        <div class="textwidget">
+                            <img src="../images/morinaga_1.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End div content-slider  -->
+
+        <!--  div inner  -->
+        <div id="inner">
+            <div id="content-sidebar-wrap">
+
+                <div id="content" class="hfeed">
+
+                    <div id="flexible-block-1" class="flexible-block-2 flexible-block block-even block-2 block ">
+                        <h2 class='block-title'><a href='SQA Garden_Category.html' title='Fheng Shui Plant'><span>Fheng Shui Plant</span></a></h2>
+                        <div id="menu-1373" class="extra-menu">
+                            <div class="menu-do-khuyen-mai-tu-cac-hang-container">
+                                <ul id="menu-do-khuyen-mai-tu-cac-hang" class="menu">
+                                    <li id="menu-item-178437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-178437"><a href="SQA Garden_Category.html">View all</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block-wrap">
+                            <div class="main-posts">
+                                <div id="post-31660" class="caia-block-item">
+                                    <div class="image-sp">
+                                        <a href="SQA Garden_Product_detail.html?id=48" title="Prince Charming Plant">
+                                            <div class="imghome" style="background:url(../images/product/Screenshot_2.png) no-repeat center center;" /></div>
+                                    </a>
+                                </div>
+                                <h3><a href="SQA Garden_Product_detail.html?id=48" title="Prince Charming Plant">Prince Charming Plant</a></h3>
+                                <div class="show-gia">
+                                    <p class="price"><span>250,000 $</span></p>
+                                </div>
+                                <div id="buy-product" class="buy-product">
+                                    <!--#ADD CART--><a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=48">Add Cart</a>
+                                </div>
+                            </div>
+                            <div id="post-31660" class="caia-block-item">
+                                <div class="image-sp">
+                                    <a href="SQA Garden_Product_detail.html?id=49" title="Poinsettia">
+                                        <div class="imghome" style="background:url(../images/product/Screenshot_3.png) no-repeat center center;" /></div>
+                                </a>
+                            </div>
+                            <h3><a href="SQA Garden_Product_detail.html?id=49" title="Poinsettia">Poinsettia</a></h3>
+                            <div class="show-gia">
+                                <p class="price"><span>
+                                                    180,000                                                $</span></p>
+                            </div>
+                            <div id="buy-product" class="buy-product">
+                                <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=49">Add Cart</a>
+                            </div>
+                        </div>
+                        <div id="post-31660" class="caia-block-item">
+                            <div class="image-sp">
+                                <a href="SQA Garden_Product_detail.html?id=50" title="Flowers of beauty">
+                                    <div class="imghome" style="background:url(../images/product/Screenshot_4.png) no-repeat center center;" /></div>
+                            </a>
+                        </div>
+                        <h3><a href="SQA Garden_Product_detail.html?id=50" title="Flowers of beauty">Flowers of beauty</a></h3>
+                        <div class="show-gia">
+                            <p class="price"><span>390,000 $</span></p>
+                        </div>
+                        <div id="buy-product" class="buy-product">
+                            <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=50">Add Cart</a>
+                        </div>
+                    </div>
+                    <div id="post-31660" class="caia-block-item">
+                        <div class="image-sp">
+                            <a href="SQA Garden_Product_detail.html?id=53" title="Daffodill">
+                                <div class="imghome" style="background:url(../images/product/Screenshot_5.png) no-repeat center center;" /></div>
+                        </a>
+                    </div>
+                    <h3><a href="SQA Garden_Product_detail.html?id=53" title="Daffodill">Daffodill</a></h3>
+                    <div class="show-gia">
+                        <p class="price"><span>
+                                                    750,500                                                $</span></p>
+                    </div>
+                    <div id="buy-product" class="buy-product">
+                        <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=53">Add Cart</a>
+                    </div>
+                </div>
+                <div id="post-31660" class="caia-block-item">
+                    <div class="image-sp">
+                        <a href="SQA Garden_Product_detail.html?id=62" title="tét">
+                            <div class="imghome" style="background:url(../images/product/view news.jpg) no-repeat center center;" /></div>
+                    </a>
+                </div>
+                <h3><a href="SQA Garden_Product_detail.html?id=62" title="tét">tét</a></h3>
+                <div class="show-gia">
+                    <p class="price"><span>1 $</span></p>
+                </div>
+                <div id="buy-product" class="buy-product">
+                    <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=62">Add Cart</a>
+                </div>
+            </div>
+            <!-- end 1 post -->
+        </div>
+
+        <!-- end .main-posts -->
+    </div>
+    <!-- end .block-wrap -->
+    </div>
+    <div id="flexible-block-1" class="flexible-block-2 flexible-block block-even block-2 block ">
+        <h2 class='block-title'><a href='SQA Garden_Category.html' title='Cactus Tree'><span>Cactus Tree</span></a></h2>
+        <div id="menu-1373" class="extra-menu">
+            <div class="menu-do-khuyen-mai-tu-cac-hang-container">
+                <ul id="menu-do-khuyen-mai-tu-cac-hang" class="menu">
+                    <li id="menu-item-178437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-178437"><a href="SQA Garden_Category.html">View all</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="block-wrap">
+            <div class="main-posts">
+                <div id="post-31660" class="caia-block-item">
+                    <div class="image-sp">
+                        <a href="SQA Garden_Product_detail.html?id=61" title="The Holly Tree">
+                            <div class="imghome" style="background:url(../images/product/Screenshot_15.png) no-repeat center center;" /></div>
+                    </a>
+                </div>
+                <h3><a href="SQA Garden_Product_detail.html?id=61" title="The Holly Tree">The Holly Tree</a></h3>
+                <div class="show-gia">
+                    <p class="price"><span>
+                                                    455,000                                                $</span></p>
+                </div>
+                <div id="buy-product" class="buy-product">
+                    <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=61">Add Cart</a>
+                </div>
+            </div>
+            <!-- end 1 post -->
+        </div>
+
+        <!-- end .main-posts -->
+    </div>
+    <!-- end .block-wrap -->
+    </div>
+    <div id="flexible-block-1" class="flexible-block-2 flexible-block block-even block-2 block ">
+        <h2 class='block-title'><a href='SQA Garden_Category.html' title='Succulent Tree'><span>Succulent Tree</span></a></h2>
+        <div id="menu-1373" class="extra-menu">
+            <div class="menu-do-khuyen-mai-tu-cac-hang-container">
+                <ul id="menu-do-khuyen-mai-tu-cac-hang" class="menu">
+                    <li id="menu-item-178437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-178437"><a href="SQA Garden_Category.html?action=category&id=38">View all</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="block-wrap">
+            <div class="main-posts">
+                <div id="post-31660" class="caia-block-item">
+                    <div class="image-sp">
+                        <a href="SQA Garden_Product_detail.html?id=54" title="WaterLilly">
+                            <div class="imghome" style="background:url(../images/product/Screenshot_7.png) no-repeat center center;" /></div>
+                    </a>
+                </div>
+                <h3><a href="SQA Garden_Product_detail.html?id=54" title="WaterLilly">WaterLilly</a></h3>
+                <div class="show-gia">
+                    <p class="price"><span>
+                                                    405,000                                                $</span></p>
+                </div>
+                <div id="buy-product" class="buy-product">
+                    <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=54">Add Cart</a>
+                </div>
+            </div>
+            <div id="post-31660" class="caia-block-item">
+                <div class="image-sp">
+                    <a href="SQA Garden_Product_detail.html?id=55" title="Tulip">
+                        <div class="imghome" style="background:url(../images/product/Screenshot_8.png) no-repeat center center;" /></div>
+                </a>
+            </div>
+            <h3><a href="SQA Garden_Product_detail.html?id=55" title="Tulip">Tulip</a></h3>
+            <div class="show-gia">
+                <p class="price"><span>
+                                                    288,000                                                $</span></p>
+            </div>
+            <div id="buy-product" class="buy-product">
+                <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=55">Add Cart</a>
+            </div>
+        </div>
+        <div id="post-31660" class="caia-block-item">
+            <div class="image-sp">
+                <a href="SQA Garden_Product_detail.html?id=56" title="Primrose">
+                    <div class="imghome" style="background:url(../images/product/Screenshot_9.png) no-repeat center center;" /></div>
+            </a>
+        </div>
+        <h3><a href="SQA Garden_Product_detail.html?id=56" title="Primrose">Primrose</a></h3>
+        <div class="show-gia">
+            <p class="price"><span>
+                                                    304,000                                                $</span></p>
+        </div>
+        <div id="buy-product" class="buy-product">
+            <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=56">Add Cart</a>
+        </div>
+    </div>
+    <!-- end 1 post -->
+    </div>
+
+    <!-- end .main-posts -->
+    </div>
+    <!-- end .block-wrap -->
+    </div>
+    <div id="flexible-block-1" class="flexible-block-2 flexible-block block-even block-2 block ">
+        <h2 class='block-title'><a href='SQA Garden_Category.html?action=category&id=40' title='Office Tree'><span>Office Tree</span></a></h2>
+        <div id="menu-1373" class="extra-menu">
+            <div class="menu-do-khuyen-mai-tu-cac-hang-container">
+                <ul id="menu-do-khuyen-mai-tu-cac-hang" class="menu">
+                    <li id="menu-item-178437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-178437"><a href="SQA Garden_Category.html?action=category&id=40">View all</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="block-wrap">
+            <div class="main-posts">
+                <div id="post-31660" class="caia-block-item">
+                    <div class="image-sp">
+                        <a href="SQA Garden_Product_detail.html?id=57" title="Crocus">
+                            <div class="imghome" style="background:url(../images/product/Screenshot_10.png) no-repeat center center;" /></div>
+                    </a>
+                </div>
+                <h3><a href="SQA Garden_Product_detail.html?id=57" title="Crocus">Crocus</a></h3>
+                <div class="show-gia">
+                    <p class="price"><span>
+                                                    427,500                                                $</span></p>
+                </div>
+                <div id="buy-product" class="buy-product">
+                    <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=57">Add Cart</a>
+                </div>
+            </div>
+            <div id="post-31660" class="caia-block-item">
+                <div class="image-sp">
+                    <a href="SQA Garden_Product_detail.html?id=58" title="Cryssanthemum">
+                        <div class="imghome" style="background:url(../images/product/Screenshot_11.png) no-repeat center center;" /></div>
+                </a>
+            </div>
+            <h3><a href="SQA Garden_Product_detail.html?id=58" title="Cryssanthemum">Cryssanthemum</a></h3>
+            <div class="show-gia">
+                <p class="price"><span>320,000 $</span></p>
+            </div>
+            <div id="buy-product" class="buy-product">
+                <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=58">Add Cart</a>
+            </div>
+        </div>
+        <div id="post-31660" class="caia-block-item">
+            <div class="image-sp">
+                <a href="SQA Garden_Product_detail.html?id=59" title="BlueBell">
+                    <div class="imghome" style="background:url(../images/product/Screenshot_12.png) no-repeat center center;" /></div>
+            </a>
+        </div>
+        <h3><a href="SQA Garden_Product_detail.html?id=59" title="BlueBell">BlueBell</a></h3>
+        <div class="show-gia">
+            <p class="price"><span>560,000 $</span></p>
+        </div>
+        <div id="buy-product" class="buy-product">
+            <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=59">Add Cart</a>
+        </div>
+    </div>
+    <div id="post-31660" class="caia-block-item">
+        <div class="image-sp">
+            <a href="SQA Garden_Product_detail.html?id=60" title="Foxglove">
+                <div class="imghome" style="background:url(../images/product/Screenshot_14.png) no-repeat center center;" /></div>
+        </a>
+    </div>
+    <h3><a href="SQA Garden_Product_detail.html?id=60" title="Foxglove">Foxglove</a></h3>
+    <div class="show-gia">
+        <p class="price"><span>
+                                                    441,000                                                $</span></p>
+    </div>
+    <div id="buy-product" class="buy-product">
+        <a class="addtocart" title="Add Cart" href="SQA Garden_Cart.html?id=60">Add Cart</a>
+    </div>
+    </div>
+    <!-- end 1 post -->
+    </div>
+
+    <!-- end .main-posts -->
+    </div>
+    <!-- end .block-wrap -->
+    </div>
+
+
+
+    <div id="product-seen"></div>
+    </div>
+
+
+
+    <div id="sidebar" class="sidebar widget-area">
+
+
+        <div id="caia-product-jquery-2" class="widget caia-product-jquery-widget">
+            <div class="widget-wrap">
+                <h4 class="widget-title widgettitle">Customer's choice</h4>
+                <div class="main-posts">
+                    <div class="">
+                        <ul>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=48" title="Prince Charming Plant" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_2.png " class="attachment-thumbnail" alt="Prince Charming Plant" title="Prince Charming Plant" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=48" title="Prince Charming Plant">Prince Charming Plant</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 250000 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=49" title="Poinsettia" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_3.png " class="attachment-thumbnail" alt="Poinsettia" title="Poinsettia" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=49" title="Poinsettia">Poinsettia</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 180,000 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=50" title="Flowers of beauty" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_4.png " class="attachment-thumbnail" alt="Flowers of beauty" title="Flowers of beauty" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=50" title="Flowers of beauty">Flowers of beauty</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 390000 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=53" title="Daffodill" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_5.png " class="attachment-thumbnail" alt="Daffodill" title="Daffodill" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=53" title="Daffodill">Daffodill</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 750,500 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=54" title="WaterLilly" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_7.png " class="attachment-thumbnail" alt="WaterLilly" title="WaterLilly" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=54" title="WaterLilly">WaterLilly</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 405,000 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=55" title="Tulip" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_8.png " class="attachment-thumbnail" alt="Tulip" title="Tulip" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=55" title="Tulip">Tulip</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 288,000 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=56" title="Primrose" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_9.png " class="attachment-thumbnail" alt="Primrose" title="Primrose" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=56" title="Primrose">Primrose</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 304,000 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=57" title="Crocus" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_10.png " class="attachment-thumbnail" alt="Crocus" title="Crocus" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=57" title="Crocus">Crocus</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 427,500 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=58" title="Cryssanthemum" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_11.png " class="attachment-thumbnail" alt="Cryssanthemum" title="Cryssanthemum" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=58" title="Cryssanthemum">Cryssanthemum</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 320000 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="post-164177 products type-products status-publish has-post-thumbnail entry">
+                                <a href="SQA Garden_Product_detail.html?id=59" title="BlueBell" class="alignleft"><img width="150" height="150" src="../images/product/Screenshot_12.png " class="attachment-thumbnail" alt="BlueBell" title="BlueBell" /></a>
+                                <h3 class="widget-item-title"><a href="SQA Garden_Product_detail.html?id=59" title="BlueBell">BlueBell</a></h3>
+                                <div class="show-gia1"><span class="price"><span> 560000 $</span></span>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <!--end post_class()-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ads_widget-7" class="widget caia_ads_widget">
+            <div class="widget-wrap">
+                <div class="ads_content_widget">
+                    <div class="fb-page" data-href="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="Foody Fresh">
+                                <a href=""></a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--  End div inner  -->
+
+
+    <!--  div footer  -->
+    <div id="content-before-footer">
+        <div class="wrap">
+            <div id="ads_widget-4" class="widget caia_ads_widget">
+                <div class="widget-wrap">
+                    <div class="ads_content_widget">
+                        <a href="#" target="blank"><img src="" atl="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+    </div>
+
+    <script type="text/javascript" src="../public/js/addthis_widget.js#pubid=ra-561f22cba0f108c3" async="async"></script>
+    <div class="scroll-back-to-top-wrapper">
+        <span class="scroll-back-to-top-inner">
+    <i class="fa fa-2x fa-chevron-circle-up"></i>
+    </span>
+    </div>
+    <script type='text/javascript' src='../public/js/jquery.form.min.js'></script>
+
+    <script type='text/javascript' src='../public/js/scripts.js'></script>
+
+    <script type='text/javascript' src='../public/js/superfish.min.js'></script>
+    <script type='text/javascript' src='../public/js/superfish.args.min.js'></script>
+    <script type='text/javascript' src='../public/js/superfish.compat.min.js'></script>
+    <script type='text/javascript' src='../public/js/jquery-3.2.1.js'></script>
+
+    <!--  End div footer  -->
+    </div>
+
+</body>
+
+</html>
